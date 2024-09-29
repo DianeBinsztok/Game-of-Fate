@@ -5,11 +5,11 @@ define('REQUEST_URI', str_replace(dirname($_SERVER['SCRIPT_NAME']), '', $_SERVER
 
 switch (REQUEST_URI) {
     case '/':
-        require "homepage.php";
+        require "templates/homepage.php";
         break;
 
     case '/card':
-        require "single-card.php";
+        require "templates/single-card.php";
         break;
 
     default:
